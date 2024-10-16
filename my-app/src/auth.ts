@@ -6,6 +6,7 @@ import { db } from "@/db";
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
 // http://localhost:3000/api/auth/callback/github
+// https://github.com/settings/applications/2743161
 
 if (!GITHUB_CLIENT_ID || !GITHUB_CLIENT_SECRET) {
   throw new Error("Missing github oauth credentials");
